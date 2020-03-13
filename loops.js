@@ -1,7 +1,11 @@
 //not working: "adds `"I am ${i} strange loop${i === 0 ? '' : 's'}."` to an array 25 times"
 function forLoop(array) {
   for (let i = 0; i < 25; i++) {
-array[i] = `I am ${i} strange loop${i === 0 ? '' : 's'}.`
+s = "s."
+if (i === 1) {
+  s = "."
+} else { s = "s." }
+array[i] = "I am " + i + " strange loop" + s
     return array
   }
 }
